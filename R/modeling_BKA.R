@@ -45,8 +45,6 @@ Exp_014_E_coli_BKA_2_5_19 %>%
 #facet_wrap(~variable)
 
 
-mhgfhgf
-
 
 #question 1: PBS serum vs Mouse Serum. Isn't mouse serum diluted in PBS? what is the difference here?   
 # Bat samples, are these plasma or serum samples? oh w8 its serum 
