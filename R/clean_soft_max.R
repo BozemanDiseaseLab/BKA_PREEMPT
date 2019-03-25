@@ -54,9 +54,6 @@ return(data.tidy.join)
 }
 
 
-
-S.aureus postive control
-
 control.ratio.plot <- function(data, positive.control)
 {
   data_0 <- data[data$time == 0, ]
@@ -75,7 +72,7 @@ plot<- data.join %>%
     filter(sample != 'Blank') %>%
     ggplot() +
     geom_line(aes(x=time.y, y= as.numeric(rate_ratio), group = well, col = sample)) +
-    scale_y_continuous(0,3)+
+    #scale_y_continuous(0,3)+
     facet_wrap(~sample) 
 
 return(plot)
