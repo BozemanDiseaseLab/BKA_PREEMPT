@@ -8,7 +8,7 @@ control.ratio.plot(data=data, positive.control = "S.aureus postive control")
 
 control.ratio.plot(data=data, positive.control = "PBS negative conrtol")
 
-sdf
+
 data %>%
 unite(well, c(which_row, column)) %>%
 filter(sample != 'Blank') %>%
