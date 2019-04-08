@@ -1,7 +1,11 @@
 source('R/clean_soft_max.R')
 
+files <- list.files('~/Box Sync/Research NSF Bat1Health Collaboration/bat_immunoassays/')
+files[[10]] # choose file (EB018_microplate_BKA_S.aureus_Mouse_and_Bat.xlsx)
+file_path = paste('~/Box Sync/Research NSF Bat1Health Collaboration/bat_immunoassays/', files[[10]], sep = "")
+
 data <- soft.max.clean(row_start_of_data = 19,
-                       file_path = '~/Box Sync/Research NSF Bat1Health Collaboration/bat_immunoassays/EB018_microplate_BKA_S.aureus_Mouse_and_Bat.xlsx',
+                       file_path = file_path,
                        num_of_time_points = 9)
 
 control.ratio.plot(data=data, positive.control = "S.aureus postive control")
